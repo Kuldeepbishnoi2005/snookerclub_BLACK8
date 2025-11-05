@@ -18,12 +18,12 @@ function Hero({ onNavigate }: HeroProps) {
             <CircleDot className="w-20 h-20 text-emerald-400 animate-spin-slow" style={{ animationDuration: '8s' }} />
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight px-4">
             BLACK 8
             <span className="block text-emerald-400 mt-2">Snooker Club</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-neutral-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-neutral-300 mb-12 max-w-2xl mx-auto px-4">
             Experience premium snooker in a professional setting with top-quality tables
           </p>
 
@@ -42,29 +42,29 @@ function Hero({ onNavigate }: HeroProps) {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all">
-              <Clock className="w-8 h-8 text-emerald-400 mx-auto mb-3" />
-              <h3 className="text-white font-semibold mb-2">Opening Hours</h3>
-              <p className="text-neutral-400">11:00 AM - 1:00 AM</p>
-              <p className="text-neutral-500 text-sm mt-1">Daily</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+            <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-4 md:p-6 hover:border-emerald-500/50 transition-all">
+              <Clock className="w-6 h-6 md:w-8 md:h-8 text-emerald-400 mx-auto mb-2 md:mb-3" />
+              <h3 className="text-white font-semibold mb-1 md:mb-2 text-sm md:text-base">Opening Hours</h3>
+              <p className="text-neutral-400 text-sm md:text-base">11:00 AM - 1:00 AM</p>
+              <p className="text-neutral-500 text-xs md:text-sm mt-1">Daily</p>
             </div>
 
-            <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all">
-              <IndianRupee className="w-8 h-8 text-emerald-400 mx-auto mb-3" />
-              <h3 className="text-white font-semibold mb-2">Pricing</h3>
-              <p className="text-neutral-400">₹4 per minute</p>
-              <p className="text-neutral-500 text-sm mt-1">Per person</p>
+            <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-4 md:p-6 hover:border-emerald-500/50 transition-all">
+              <IndianRupee className="w-6 h-6 md:w-8 md:h-8 text-emerald-400 mx-auto mb-2 md:mb-3" />
+              <h3 className="text-white font-semibold mb-1 md:mb-2 text-sm md:text-base">Pricing</h3>
+              <p className="text-neutral-400 text-sm md:text-base">₹4 per minute</p>
+              <p className="text-neutral-500 text-xs md:text-sm mt-1">Per person</p>
             </div>
 
-            <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-6 hover:border-emerald-500/50 transition-all">
-              <MapPin className="w-8 h-8 text-emerald-400 mx-auto mb-3" />
-              <h3 className="text-white font-semibold mb-2">Location</h3>
+            <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-4 md:p-6 hover:border-emerald-500/50 transition-all">
+              <MapPin className="w-6 h-6 md:w-8 md:h-8 text-emerald-400 mx-auto mb-2 md:mb-3" />
+              <h3 className="text-white font-semibold mb-1 md:mb-2 text-sm md:text-base">Location</h3>
               <a
                 href="https://maps.app.goo.gl/A9f6ANzMacNsb1Lc8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="text-emerald-400 hover:text-emerald-300 transition-colors text-sm md:text-base"
               >
                 View on Maps
               </a>
