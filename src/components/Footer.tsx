@@ -10,7 +10,7 @@ function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                B8
+                SNOOKER CLUB
               </div>
               <span className="text-white font-semibold text-xl">BLACK 8 Snooker Club</span>
             </div>
@@ -27,24 +27,24 @@ function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   Home
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#about" className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   About
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#booking" className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   Booking
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#gallery" className="text-neutral-400 hover:text-emerald-400 transition-colors">
-                  Gallery
-                </a>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Contact
+                </button>
               </li>
             </ul>
           </div>
