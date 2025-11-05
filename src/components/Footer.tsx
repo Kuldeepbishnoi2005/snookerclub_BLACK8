@@ -24,27 +24,27 @@ function Footer() {
           </div>
 
          <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <Link to="/" className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <Link to="/about" className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
                   About
-                </button>
+                </Link>
               </li>
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
-                  Booking
-                </button>
+                <Link to="/booking" className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
+                  Projects
+                </Link>
               </li>
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <Link to="/contact" className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
                   Contact
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
