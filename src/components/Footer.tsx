@@ -23,45 +23,31 @@ function Footer() {
             </div>
           </div>
 
-          // Footer.jsx (or wherever your Quick Links are)
-<div>
-  <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-  <ul className="space-y-2">
-    <li>
-      <button
-        onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
-        className="text-neutral-400 hover:text-emerald-400 transition-colors"
-      >
-        Home
-      </button>
-    </li>
-    <li>
-      <button
-        onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-        className="text-neutral-400 hover:text-emerald-400 transition-colors"
-      >
-        About
-      </button>
-    </li>
-    <li>
-      <button
-        onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
-        className="text-neutral-400 hover:text-emerald-400 transition-colors"
-      >
-        Booking
-      </button>
-    </li>
-    <li>
-      <button
-        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-        className="text-neutral-400 hover:text-emerald-400 transition-colors"
-      >
-        Contact
-      </button>
-    </li>
-  </ul>
-</div>
-
+         <div>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Home
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  About
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Booking
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
