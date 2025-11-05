@@ -85,7 +85,7 @@ function Hero({ onNavigate }: HeroProps) {
           <div className="group relative bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all">
             <div className="aspect-square bg-gradient-to-br from-emerald-900/40 to-teal-900/40 flex items-center justify-center overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop"
+                src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1762355880/Snapchat-227645278_yx8bkp.jpg"
                 alt="Premium snooker table"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
@@ -99,7 +99,7 @@ function Hero({ onNavigate }: HeroProps) {
           <div className="group relative bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all">
             <div className="aspect-square bg-gradient-to-br from-emerald-900/40 to-teal-900/40 flex items-center justify-center overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/5632415/pexels-photo-5632415.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop"
+                src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1762356645/iwcogl1zywrwgcpepeex.jpg"
                 alt="Snooker balls and cue"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
@@ -113,7 +113,7 @@ function Hero({ onNavigate }: HeroProps) {
           <div className="group relative bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all">
             <div className="aspect-square bg-gradient-to-br from-emerald-900/40 to-teal-900/40 flex items-center justify-center overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/5632407/pexels-photo-5632407.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop"
+                src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1762357383/Screenshot_20251105_210740_WhatsApp_lwfkvz.jpg"
                 alt="Club interior"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
