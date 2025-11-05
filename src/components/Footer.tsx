@@ -10,7 +10,7 @@ function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                SNOOKER CLUB
+                B8
               </div>
               <span className="text-white font-semibold text-xl">BLACK 8 Snooker Club</span>
             </div>
