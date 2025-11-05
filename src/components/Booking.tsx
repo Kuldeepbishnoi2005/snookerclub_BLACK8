@@ -48,16 +48,16 @@ function Booking() {
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-neutral-900">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Book Your <span className="text-emerald-400">Table</span>
           </h2>
-          <p className="text-neutral-400 text-lg">
+          <p className="text-neutral-400 text-base md:text-lg">
             Reserve your spot and enjoy premium snooker experience
           </p>
         </div>
 
-        <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-2xl p-8 md:p-10">
+        <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-2xl p-4 sm:p-6 md:p-10">
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
               <label className="block text-neutral-300 font-medium mb-2">
@@ -153,18 +153,18 @@ function Booking() {
           </div>
 
           {formData.duration && formData.persons && (
-            <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-xl p-6 mb-8">
-              <div className="flex items-center justify-between">
+            <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-xl p-4 sm:p-6 mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <IndianRupee className="w-8 h-8 text-emerald-400" />
+                  <IndianRupee className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-400" />
                   <div>
-                    <div className="text-neutral-400 text-sm">Estimated Cost</div>
-                    <div className="text-3xl font-bold text-white">₹{estimatedCost}</div>
+                    <div className="text-neutral-400 text-xs sm:text-sm">Estimated Cost</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-white">₹{estimatedCost}</div>
                   </div>
                 </div>
-                <div className="text-right text-neutral-400">
-                  <div className="text-sm">Rate: ₹4/min per person</div>
-                  <div className="text-sm">{formData.duration} min × {formData.persons} person(s)</div>
+                <div className="text-left sm:text-right text-neutral-400">
+                  <div className="text-xs sm:text-sm">Rate: ₹4/min per person</div>
+                  <div className="text-xs sm:text-sm">{formData.duration} min × {formData.persons} person(s)</div>
                 </div>
               </div>
             </div>
