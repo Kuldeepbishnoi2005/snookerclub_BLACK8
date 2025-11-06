@@ -1,9 +1,8 @@
-import React from 'react';
 import { Phone, Instagram, MapPin, CircleDot } from 'lucide-react';
 
-function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
+function Footer() {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-neutral-950 border-t border-neutral-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -27,16 +26,26 @@ function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
           <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['home', 'about', 'booking', 'contact'].map((section) => (
-                <li key={section}>
-                  <button
-                    onClick={() => onNavigate && onNavigate(section)}
-                    className="text-neutral-400 hover:text-emerald-400 transition-colors capitalize"
-                  >
-                    {section}
-                  </button>
-                </li>
-              ))}
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Home
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  About
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Booking
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                  Contact
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -44,18 +53,23 @@ function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+917049332283" className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors">
-                  <Phone className="w-4 h-4" /> +91 70493 32283
+                <a
+                  href="tel:+917049332283"
+                  className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  +91 70493 32283
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/black_8_snooker_club"
+                  href="https://www.instagram.com/black_8_snooker_club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors"
                 >
-                  <Instagram className="w-4 h-4" /> @black_8_snooker_club
+                  <Instagram className="w-4 h-4" />
+                  @black_8_snooker_club
                 </a>
               </li>
               <li>
@@ -65,7 +79,8 @@ function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors"
                 >
-                  <MapPin className="w-4 h-4" /> View Location
+                  <MapPin className="w-4 h-4" />
+                  View Location
                 </a>
               </li>
             </ul>
@@ -73,8 +88,12 @@ function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
         </div>
 
         <div className="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-neutral-500 text-sm">© {currentYear} BLACK 8 Snooker Club. All rights reserved.</p>
-          <p className="text-neutral-500 text-sm">Open Daily: 11:00 AM - 1:00 AM</p>
+          <p className="text-neutral-500 text-sm">
+            © {currentYear} BLACK 8 Snooker Club. All rights reserved.
+          </p>
+          <p className="text-neutral-500 text-sm">
+            Open Daily: 11:00 AM - 1:00 AM
+          </p>
         </div>
       </div>
     </footer>
@@ -82,3 +101,4 @@ function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
 }
 
 export default Footer;
+
