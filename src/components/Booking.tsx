@@ -68,6 +68,22 @@ function Booking() {
 
             <div>
               <label className="block text-neutral-300 font-medium mb-2">
+                <Users className="w-4 h-4 inline mr-2" />
+                Number of Persons
+              </label>
+              <input
+                type="number"
+                name="persons"
+                value={formData.persons}
+                onChange={handleChange}
+                placeholder="How many people?"
+                min="1"
+                className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500 transition-colors"
+              />
+            </div>
+
+            <div>
+              <label className="block text-neutral-300 font-medium mb-2">
                 <Calendar className="w-4 h-4 inline mr-2" />
                 Date
               </label>
