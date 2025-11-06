@@ -1,4 +1,5 @@
 import { Phone, Instagram, MapPin, CircleDot } from 'lucide-react';
+import <Footer onNavigate={handleNavigation} />
 
 function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
   const currentYear = new Date().getFullYear();
