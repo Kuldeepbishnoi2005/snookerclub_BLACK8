@@ -1,6 +1,6 @@
 import { Phone, Instagram, MapPin, CircleDot } from 'lucide-react';
 
-function Footer() {
+function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -23,54 +23,38 @@ function Footer() {
             </div>
           </div>
 
-         <div>
+          <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-  <li>
-    <a href="#home" className="text-neutral-400 hover:text-emerald-400 transition-colors">
-      Home
-    </a>
-  </li>
-  <li>
-    <a href="#about" className="text-neutral-400 hover:text-emerald-400 transition-colors">
-      About
-    </a>
-  </li>
-  <li>
-    <a href="#booking" className="text-neutral-400 hover:text-emerald-400 transition-colors">
-      Booking
-    </a>
-  </li>
-  <li>
-    <a href="#contact" className="text-neutral-400 hover:text-emerald-400 transition-colors">
-      Contact
-    </a>
-  </li>
-</ul>
-
+              {['home', 'about', 'booking', 'contact'].map((section) => (
+                <li key={section}>
+                  <button
+                    onClick={() => onNavigate && onNavigate(section)}
+                    className="text-neutral-400 hover:text-emerald-400 transition-colors capitalize"
+                  >
+                    {section}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="tel:+917049332283"
-                  className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  +91 7049332283
+                <a href="tel:+917049332283" className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors">
+                  <Phone className="w-4 h-4" /> +91 70493 32283
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/black_8_snooker_club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  href="https://www.instagram.com/black_8_snooker_club"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors"
                 >
-                  <Instagram className="w-4 h-4" />
-                  @black_8_snooker_club
+                  <Instagram className="w-4 h-4" /> @black_8_snooker_club
                 </a>
               </li>
               <li>
@@ -80,8 +64,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-neutral-400 hover:text-emerald-400 transition-colors"
                 >
-                  <MapPin className="w-4 h-4" />
-                  View Location
+                  <MapPin className="w-4 h-4" /> View Location
                 </a>
               </li>
             </ul>
@@ -89,12 +72,8 @@ function Footer() {
         </div>
 
         <div className="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-neutral-500 text-sm">
-            © {currentYear} BLACK 8 Snooker Club. All rights reserved.
-          </p>
-          <p className="text-neutral-500 text-sm">
-            Open Daily: 11:00 AM - 1:00 AM
-          </p>
+          <p className="text-neutral-500 text-sm">© {currentYear} BLACK 8 Snooker Club. All rights reserved.</p>
+          <p className="text-neutral-500 text-sm">Open Daily: 11:00 AM - 1:00 AM</p>
         </div>
       </div>
     </footer>
