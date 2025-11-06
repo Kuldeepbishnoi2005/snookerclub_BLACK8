@@ -28,6 +28,7 @@ function Booking() {
       `Date: ${formData.date}\n` +
       `Time: ${formData.time}\n` +
       `Duration: ${formData.duration} minutes\n` +
+      `Number of Persons: ${formData.persons}\n` +
       `Table: Table ${formData.table}\n` +
       `Estimated Cost: ₹${estimatedCost}`;
 
