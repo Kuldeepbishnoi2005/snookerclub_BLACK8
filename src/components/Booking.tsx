@@ -17,14 +17,8 @@ function Booking() {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
 
-    if (name === 'duration' || name === 'persons') {
-      const minutes = parseInt(formData.duration) || 0;
-      const people = parseInt(formData.persons) || 0;
-      if (name === 'duration') {
-        setEstimatedCost(parseInt(value) * people * 4);
-      } else {
-        setEstimatedCost(minutes * parseInt(value) * 4);
-      }
+    if (name === 'duration') {
+      setEstimatedCost(parseInt(value) * 4 || 0);
     }
   };
 
@@ -34,7 +28,6 @@ function Booking() {
       `Date: ${formData.date}\n` +
       `Time: ${formData.time}\n` +
       `Duration: ${formData.duration} minutes\n` +
-      `Number of Persons: ${formData.persons}\n` +
       `Table: Table ${formData.table}\n` +
       `Estimated Cost: ₹${estimatedCost}`;
 
@@ -42,8 +35,7 @@ function Booking() {
     window.open(whatsappUrl, '_blank');
   };
 
-  const isFormValid = formData.name && formData.date && formData.time &&
-                      formData.duration && formData.persons;
+  const isFormValid = formData.name && formData.date && formData.time && formData.duration;
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-neutral-900">
@@ -70,22 +62,6 @@ function Booking() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter your name"
-                className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500 transition-colors"
-              />
-            </div>
-
-            <div>
-              <label className="block text-neutral-300 font-medium mb-2">
-                <Users className="w-4 h-4 inline mr-2" />
-                Number of Persons
-              </label>
-              <input
-                type="number"
-                name="persons"
-                value={formData.persons}
-                onChange={handleChange}
-                placeholder="How many people?"
-                min="1"
                 className="w-full px-4 py-3 bg-neutral-900 border border-neutral-700 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500 transition-colors"
               />
             </div>
@@ -152,7 +128,7 @@ function Booking() {
             </div>
           </div>
 
-          {formData.duration && formData.persons && (
+          {formData.duration && (
             <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-xl p-4 sm:p-6 mb-8">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -163,8 +139,8 @@ function Booking() {
                   </div>
                 </div>
                 <div className="text-left sm:text-right text-neutral-400">
-                  <div className="text-xs sm:text-sm">Rate: ₹4/min per person</div>
-                  <div className="text-xs sm:text-sm">{formData.duration} min × {formData.persons} person(s)</div>
+                  <div className="text-xs sm:text-sm">Rate: ₹4/min</div>
+                  <div className="text-xs sm:text-sm">{formData.duration} minutes</div>
                 </div>
               </div>
             </div>
