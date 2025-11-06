@@ -1,9 +1,9 @@
+import React from 'react';
 import { Phone, Instagram, MapPin, CircleDot } from 'lucide-react';
-import <Footer onNavigate={handleNavigation} />
 
 function Footer({ onNavigate }: { onNavigate?: (section: string) => void }) {
   const currentYear = new Date().getFullYear();
-
+  
   return (
     <footer className="bg-neutral-950 border-t border-neutral-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
