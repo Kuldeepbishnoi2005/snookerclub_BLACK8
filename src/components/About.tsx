@@ -55,7 +55,7 @@ function About() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-emerald-400 mb-2">₹4</div>
-              <div className="text-neutral-300 font-medium">Per Minute Per Person</div>
+              <div className="text-neutral-300 font-medium">Per Minute</div>
               <div className="text-neutral-500 text-sm mt-1">Transparent Pricing</div>
             </div>
             <div>
