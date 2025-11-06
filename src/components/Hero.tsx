@@ -54,7 +54,7 @@ function Hero({ onNavigate }: HeroProps) {
               <IndianRupee className="w-6 h-6 md:w-8 md:h-8 text-emerald-400 mx-auto mb-2 md:mb-3" />
               <h3 className="text-white font-semibold mb-1 md:mb-2 text-sm md:text-base">Pricing</h3>
               <p className="text-neutral-400 text-sm md:text-base">₹4 per minute</p>
-              <p className="text-neutral-500 text-xs md:text-sm mt-1">Per person</p>
+              
             </div>
 
             <div className="bg-neutral-800/50 backdrop-blur-sm border border-neutral-700 rounded-xl p-4 md:p-6 hover:border-emerald-500/50 transition-all">
