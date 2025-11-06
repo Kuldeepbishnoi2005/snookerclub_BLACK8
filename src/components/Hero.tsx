@@ -99,7 +99,7 @@ function Hero({ onNavigate }: HeroProps) {
           <div className="group relative bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all">
             <div className="aspect-square bg-gradient-to-br from-emerald-900/40 to-teal-900/40 flex items-center justify-center overflow-hidden">
               <img
-                src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1762356645/iwcogl1zywrwgcpepeex.jpg"
+                src="https://res.cloudinary.com/dx1hmda5v/image/upload/v1762434277/20251106_155717_u3zbj8.jpg"
                 alt="Snooker balls and cue"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
