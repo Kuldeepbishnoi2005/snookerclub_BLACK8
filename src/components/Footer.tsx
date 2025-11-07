@@ -1,6 +1,10 @@
 import { Phone, Instagram, MapPin, CircleDot } from 'lucide-react';
 
-function Footer() {
+interface FooterProps {
+  onNavigate: (section: string) => void;
+}
+
+function Footer({ onNavigate }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -27,22 +31,22 @@ function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => { onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => { onNavigate('about'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   About
                 </button>
               </li>
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => { onNavigate('booking'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   Booking
                 </button>
               </li>
               <li>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-neutral-400 hover:text-emerald-400 transition-colors">
+                <button onClick={() => { onNavigate('contact'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-neutral-400 hover:text-emerald-400 transition-colors">
                   Contact
                 </button>
               </li>
@@ -101,4 +105,3 @@ function Footer() {
 }
 
 export default Footer;
-
